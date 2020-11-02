@@ -2,7 +2,9 @@ Generating an RSA key
 You can generate a 2048-bit RSA key pair with the following commands:
 
 openssl genpkey -algorithm RSA -out rsa_private.pem -pkeyopt rsa_keygen_bits:2048
+
 openssl rsa -in rsa_private.pem -pubout -out rsa_public.pem
+
 
 These commands create the following public/private key pair:
 
